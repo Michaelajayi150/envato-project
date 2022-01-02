@@ -1,0 +1,42 @@
+main {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.hero .hero-img {
+  width: 40%;
+  float: right;
+}
+
+.hero-description-sm .hero-bg {
+  width: 60%;
+  float: left;
+}
+
+.form-section {
+  width: 60%;
+}
+
+.form-section .form .text-area {
+  width: 100%;
+  height: 30vh;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+button:focus, button:active {
+  outline: none;
+}
+
+@media only screen and (max-width: 568px) {
+  p.heroes {
+    font-size: 21px;
+  }
+  .form-section {
+    width: 100%;
+    clear: both;
+  }
+}

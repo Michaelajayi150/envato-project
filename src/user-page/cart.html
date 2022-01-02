@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/vendor/fontawesome.css">
+    <link rel="stylesheet" href="../../css/vendor/fontawesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../css/header-footer.css"> <!-- Use this link for your pages CSS -->
+    <link rel="stylesheet" href="../../css/user.css">
+
+    <title> Cart | Order </title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-secondary">
+      <nav class="navbar navbar-expand-lg navbar-light bg-secondary py-1">
+        <a class="navbar-brand" href="#"><img src="../../asset/icons/logo.png" width="100" alt="Cart"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav d-flex align-items-center ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="../../asset/icons/svg/search.svg" alt="search"></a>
+            </li>
+            <li class="nav-item btn bg-primary">
+              <a class="nav-link" href="./login.html">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./cart.html"><img src="../../asset/icons/svg/cart.svg" width="35" alt="cart"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+     <div class="row w-90 mx-auto">
+      <div class="col-lg-3 mb-3">
+        <h1>User Profile</h1>
+        <div class="row fx-bg fx-pad rounded mr-1">
+          <div class="col-2 col-lg-3">
+            <img src="../../asset/icons/dark-contact.png" alt="User Icon">
+          </div>
+          <div class="col-10 col-lg-9">
+            <strong><a href="./user.html">My Profile</a></strong><br>
+            <!-- <strong><a href="./address.html">Account Information</a></strong><br> -->
+            <strong><a href="./deliver.html">Delivery Address</a></strong>
+          </div>
+        </div>
+        <div class="row fx-bg fx-pad rounded mt-3 mr-1">
+            <div class="col-2 col-lg-3">
+              <img src="../../asset/icons/dark-check.png" alt="Order Icon">
+            </div>
+            <div class="col-10 col-lg-9">
+				<strong><a class="fx-color" href="./cart.html">My Orders</a></strong><br>
+				<strong><a href="./track-order.html">Track my order</a></strong>
+            </div>
+        </div>
+      </div>
+      <div class="col-lg-9 col-12 fx-bg rounded mt-2 mb-5 py-4">
+        <h3>My Orders</h3>
+        <div class="d-none d-md-flex row w-100">
+          <div class="col-lg-2 col-md-2">
+            <h6>ORDERS</h6>
+          </div>
+          <div class="col-lg-4 col-md-3">
+            <h6>DATE</h6>
+          </div>
+          <div class="col-lg-2 col-md-2">
+            <h6>STATUS</h6>
+          </div>
+          <div class="col-lg-4 col-md-5">
+            <h6>TOTAL</h6>
+          </div>
+		    </div>
+        <div class="row w-100 my-2 cart-cl">
+          <div class="col-lg-2 col-md-2 mb-2">
+            <b class="text-warning">#384</b>
+          </div>
+          <div class="col-lg-4 col-md-3 mb-2">
+            <b>January 12, 2016</b>
+          </div>
+          <div class="col-lg-2 col-md-2 mb-2">
+            <b>Completed</b>
+          </div>
+          <div class="col-lg-4 col-md-5">
+            <b>$2 for an item</b>
+            <figure class="cart-img d-block d-md-none">
+              <img src="../../asset/item-10.png" alt="Dark Nike Shoe" width="100%">
+            </figure>
+            <span class="view"><a class="point px-3 py-1" href="./track-order.html">VIEW</a></span>
+          </div>
+        </div>
+        <div class="row w-100 my-2 cart-cl">
+          <div class="col-lg-2 col-md-2 mb-2">
+            <b class="text-warning">#384</b>
+          </div>
+          <div class="col-lg-4 col-md-3 mb-2">
+            <b>January 12, 2016</b>
+          </div>
+          <div class="col-lg-2 col-md-2 mb-2">
+            <b>Completed</b>
+          </div>
+          <div class="col-lg-4 col-md-5">
+            <b>$2 for an item</b>
+            <figure class="cart-img d-block d-md-none">
+              <img src="../../asset/item-12.png" alt="Dark Nike Shoe" width="100%">
+            </figure>
+            <span class="view"><a class="point px-3 py-1" href="./track-order.html">VIEW</a></span>
+          </div>
+        </div>
+        <div class="row w-100 my-2 cart-cl">
+          <div class="col-lg-2 col-md-2 mb-2">
+            <b class="text-warning">#384</b>
+          </div>
+          <div class="col-lg-4 col-md-3 mb-2">
+            <b>January 12, 2016</b>
+          </div>
+          <div class="col-lg-2 col-md-2 mb-2">
+            <b>Completed</b>
+          </div>
+          <div class="col-lg-4 col-md-5">
+            <b>$2 for an item</b>
+            <figure class="cart-img d-block d-md-none">
+              <img src="../../asset/item-11.png" alt="Dark Nike Shoe" width="100%">
+            </figure>
+            <span class="view"><a class="point px-3 py-1" href="./track-order.html">VIEW</a></span>
+          </div>
+        </div>
+        <div class="row w-100 my-2 cart-cl">
+          <div class="col-lg-2 col-md-2 mb-2">
+            <b class="text-warning">#384</b>
+          </div>
+          <div class="col-lg-4 col-md-3 mb-2">
+            <b>January 12, 2016</b>
+          </div>
+          <div class="col-lg-2 col-md-2 mb-2">
+            <b>Completed</b>
+          </div>
+          <div class="col-lg-4 col-md-5">
+            <b>$2 for an item</b>
+            <figure class="cart-img d-block d-md-none">
+              <img src="../../asset/item-9.png" alt="Dark Nike Shoe" width="100%">
+            </figure>
+            <span class="view"><a class="point px-3 py-1" href="./track-order.html">VIEW</a></span>
+          </div>
+        </div>
+        <div class="row w-100 my-2 cart-cl">
+          <div class="col-lg-2 col-md-2 mb-2">
+            <b class="text-warning">#384</b>
+          </div>
+          <div class="col-lg-4 col-md-3 mb-2">
+            <b>January 12, 2016</b>
+          </div>
+          <div class="col-lg-2 col-md-2 mb-2">
+            <b>Completed</b>
+          </div>
+          <div class="col-lg-4 col-md-5">
+            <b>$2 for an item</b>
+            <figure class="cart-img d-block d-md-none">
+              <img src="../../asset/item-10.png" alt="Dark Nike Shoe" width="100%">
+            </figure>
+            <span class="view"><a class="point px-3 py-1" href="./track-order.html">VIEW</a></span>
+          </div>
+        </div>
+        <div class="row w-100 my-2 cart-cl">
+          <div class="col-lg-2 col-md-2 mb-2">
+            <b class="text-warning">#384</b>
+          </div>
+          <div class="col-lg-4 col-md-3 mb-2">
+            <b>January 12, 2016</b>
+          </div>
+          <div class="col-lg-2 col-md-2 mb-2">
+            <b>Completed</b>
+          </div>
+          <div class="col-lg-4 col-md-5">
+            <b>$2 for an item</b>
+            <figure class="cart-img d-block d-md-none">
+              <img src="../../asset/item-9.png" alt="Dark Nike Shoe" width="100%">
+            </figure>
+            <span class="view"><a class="point px-3 py-1" href="./track-order.html">VIEW</a></span>
+          </div>
+        </div>
+        <div class="mt-4 pl-3 text-center">
+          <span><a class="py-2 px-3 point" href="./cart.html">NEXT</a></span>
+        </div>
+      </div>
+     </div>
+    </main>
+
+    <!-- Footer -->
+		<footer>
+			<div class="row mx-auto p-5 text-white text-center bg-light text-dark">
+				<div class="col-12 mb-3">
+					<h2 class="mainOrange">Let’s keep the conversation going</h2>
+				</div>
+				<div class="col-12 mb-1">
+						<p>
+							Receive our newsletter and discover our stories, collections, and surprises.
+						</p>
+				</div>
+				<div class="col-12 w-100 mb-3">
+					<div class="row">
+            <form class="form-inline mx-auto">
+              <div class="form-group mb-2 mx-auto">
+                <label for="staticEmail2" class="sr-only">Email</label>
+                <input type="text" class="form-control mx-auto" id="staticEmail2" placeholder="email@example.com">
+              </div>
+              <button type="submit" class="btn btn-dark mb-2 mx-auto">Subcribe</button>
+            </form>
+        </div>
+				</div>
+				<div class="row mx-auto">
+					<div class="col-8 col-lg-6 col-sm-12 mx-auto">
+						<p>
+							By subscribing to our newsletter, you agree that your data will be processed in compliance with our General 
+								<a href="#" class="text-secondary">
+									Terms and Conditions of Use
+								</a> and our 
+								<a href="#" class="text-secondary">
+									Privacy Policy
+								</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row w-100 bg-light p-5 mx-auto mobile">
+				<div class="col-lg-3 col-md-6 col-sm-12 pt-3 pb-1">
+					<h1 class="text-dark">Services</h1>
+					<p>
+						<a href="../contact.html">Contact us</a>
+					</p>
+					<p> 
+						<a href="#">FAQ</a>
+					</p>
+					<p>
+						<a href="#">Find a store</a>
+					</p>
+					<p>
+						<a href="#">Gifting</a>
+					</p>
+					<p>
+						<a href="#">Made to</a>
+					</p>
+					<p>
+						<a href="#">Measure</a>
+					</p>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 pt-3 pb-1">
+					<h1 class="text-dark">
+						<a href="#">Order</a>
+					</h1>
+					<p>
+						<a href="#">Payment</a>
+					</p>
+					<p>
+						<a href="#">Shipping</a>
+					</p>
+					<p>
+						<a href="#">Find a store</a>
+					</p>
+					<p>
+						<a href="#">Gifting</a>
+					</p>
+					<p>
+						<a href="#">Collect in store</a>
+					</p>
+					<p>
+						<a href="./track-order.html">Track orders</a>
+					</p>
+					<p>
+						<a href="#">Exchange &amp; returns</a>
+					</p>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 pt-3 pb-1">
+					<h1 class="">
+						<a href="#">Cart</a>
+					</h1>
+					<p>
+						<a href="../../index.html">Home</a>
+					</p>
+					<p>
+						<a href="../products.html">Product</a>
+					</p>
+					<p>
+						<a href="../about.html">About us</a>
+					</p>
+					<p>
+						<a href="#">Gifting</a>
+					</p>
+					<p>
+						<a href="#">Collect in store</a>
+					</p>
+					<p>
+						<a href="../contact.html">Contact us</a>
+					</p>
+					<p>
+						<a href="../contact.html">Help</a>
+					</p>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 pt-3 pb-1">
+					<h1 class="text-dark">Legal</h1>
+					<p>
+						<a href="#">Terms and conditions</a>
+					</p>
+					<p>
+						<a href="#">Privacy &amp; cookies</a>
+					</p>
+					<p>
+						<a href="#">BCR</a>
+					</p>
+					<p>
+						<a href="#">Legal issues</a>
+					</p>
+					<p>
+						<a href="#">Accessibility</a>
+					</p>
+				</div>
+			</div>
+			<div class="footer-logo bg-light">
+				<div class="w-100 mx-auto px-5 mx-auto text-center">
+					<img src="../../asset/icons/logo.png" class="mx-auto" alt="" srcset="">
+				</div>
+			</div>
+			<div class="text-center">
+				<div class="w-100 mx-auto bg-light px-5 py-2 mx-auto">
+					<p>&copy; 2020</p>
+				</div>
+			</div>
+		</footer>
+
+    <!-- jQuery first, then Popper.js, Fontawesome, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="../../js/vendor/bootstrap.min.js"></script>
+		<!-- Optional JS-->
+		<script src="../../js/plugins.js"></script>
+    <script src="../../js/vendor/all.js"></script>
+    <script src="../../js/vendor/all.min.js"></script>
+    <script src="../../js/vendor/fontawesome.js"></script>
+    <script src="../../js/vendor/fontawesome.min.js"></script>
+    
+  </body>
+</html>

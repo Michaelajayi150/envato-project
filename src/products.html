@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+    Gu_Ru Code
+  -->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/vendor/fontawesome.css">
+    <link rel="stylesheet" href="../css/vendor/fontawesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/header-footer.css"> <!-- Use this link for your pages CSS -->
+    <link rel="stylesheet" href="../css/products.css">
+
+    <title>Cart | Products </title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-secondary">
+      <nav class="navbar navbar-expand-lg navbar-light bg-secondary py-1">
+        <a class="navbar-brand" href="#"><img src="../asset/icons/logo.png" width="100" alt="Cart"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav d-flex align-items-center ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link current" href="#">Products <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="../asset/icons/svg/search.svg" alt="search"></a>
+            </li>
+            <li class="nav-item btn bg-primary">
+              <a class="nav-link" href="./user-page/login.html">Sign Up</a>
+            </li>
+            <li class="nav-item position-relative">
+              <a class="nav-link" href="./user-page/cart.html"><img src="../asset/icons/svg/cart.svg" width="35" alt="cart"></a>
+              <div class="cart-number bg-danger">0</div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  
+    <main>
+      <!-- Section - Hero -->
+			<section class="hero" id="hero">
+        <div class="row w-100 mx-auto hero-description-sm hero-bg bg-secondary">
+          <div class="col-md-6 col-sm-12 mx-auto">
+            <figure class="text-center">
+              <img src="../asset/item-7.png" alt="earpods">
+            </figure>
+          </div>
+          
+          <!-- Side Hero Description -->
+          <div class="col-md-6 col-sm-12">
+            <h6 class="text-danger mt-3">PREMIUM</h6>
+            <h3 class="text-dark text-capitalize">apple's wireless <br>airpods series 2</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis minus et obcaecati, quasi inventore, enim, temporibus esse qui sed laborum ad odio accusantium rem doloremque autem pariatur nostrum laudantium ut.</span>
+
+            <h6 class="text-gradient mt-3">COLOUR</h6>
+            <div class="row ml-auto">
+              <label for="white">
+                <input type="radio" id="white" name="colour-choice">
+                <div class="colour-choice-range bg-light"></div>
+              </label>
+              <label for="red">
+                <input type="radio" id="red" name="colour-choice">
+                <div class="colour-choice-range bg-danger"></div>
+              </label>
+              <label for="yellow">
+                <input type="radio" id="yellow" name="colour-choice">
+                <div class="colour-choice-range bg-warning"></div>
+              </label>
+              <label for="blue">
+                <input type="radio" id="blue" name="colour-choice">
+                <div class="colour-choice-range bg-info"></div>
+              </label>
+              <label for="black">
+                <input type="radio" id="black" name="colour-choice">
+                <div class="colour-choice-range bg-dark"></div>
+              </label>
+            </div>
+            
+            <div class="related">
+              <h6 class="text-dark text-uppercase mt-3">Other related items</h6>
+              <div class="row ml-auto">
+                <div class="related-items"><span> Speaker </span></div>
+                <div class="related-items">Apple Watch</div>
+                <div class="related-items">HeadPhones</div>
+              </div>
+            </div>
+
+            <div class="row mt-3 ml-auto">
+              <h5 class="text-dark"><s>₦ 30,025</s></h5>
+              <div>
+                <h5 class="text-dark ml-2"><b>₦ 15,025</b></h5>
+                <!-- <small><s>₦ 30,050</s></small> -->
+              </div>
+              <div class="ml-3"><a onclick="addToCart()" class="point p-2 text-uppercase" href="#">Add to cart</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section - Popular Product -->
+      <section class="product container-fluid mt-5">
+        <div class="container">
+          <h2>Popular Products</h2>
+
+          <div class="section-a position-relative">
+            <!-- Scrollable Product List -->
+            <div class="product-scroll product-flow">
+                <div class="product-item mb-4">
+                  <div class="exclusive-product">
+                    <figure class="product-img mb-0">
+                      <img src="../asset/item-10.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                    </figure>
+                    <figcaption class="product-description pt-1 pb-3 px-2">
+                      <span class="text-muted"><p class="product-text"> Orange Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                      <span class="text-dark"><b>₦ 12,290</b></span>
+                      <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                      <div class="price-banner">
+                        <i class="fas fa-bookmark"></i>
+                      </div>
+                    </figcaption>
+                  </div>
+                </div>
+    
+                <div class="product-item mb-4 ">
+                  <div class="exclusive-product">
+                    <figure class="product-img mb-0">
+                      <img src="../asset/item-15.png" alt="Bags (exclusive)" width="100%" height="100%">
+                    </figure>
+                    <figcaption class="product-description pt-1 pb-3 px-2">
+                      <span class="text-muted"><p class="product-text">Classic Charlotte Hand Bag</p></span>
+                      <span class="text-dark"><b>₦ 20,599</b></span>
+                      <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                      <div class="price-banner">
+                        <i class="fas fa-bookmark"></i>
+                      </div>
+                    </figcaption>
+                  </div>
+                </div>
+                
+                <div class="product-item mb-4 ">
+                  <div class="exclusive-product">
+                    <figure class="product-img mb-0">
+                      <img src="../asset/item-14.png" alt="Quality shirt (exclusive)" width="100%" height="100%">
+                    </figure>
+                    <figcaption class="product-description pt-1 pb-3 px-2">
+                      <span class="text-muted"><p class="product-text">Pairs of Round Neck Shirt</p></span>
+                      <span class="text-dark"><b>₦ 15,259</b></span>
+                      <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                      <div class="price-banner">
+                        <i class="fas fa-bookmark"></i>
+                      </div>
+                    </figcaption>
+                  </div>
+                </div>
+    
+                <div class="product-item mb-4 ">
+                  <div class="exclusive-product">
+                    <figure class="product-img mb-0">
+                      <img src="../asset/item-2.jpg" alt="vans shoes (exclusive)" width="100%" height="100%">
+                    </figure>
+                    <figcaption class="product-description pt-1 pb-3 px-2">
+                      <span class="text-muted"><p class="product-text">Classic Charlotte Hand Bag</p></span>
+                      <span class="text-dark"><b>₦ 12,290</b></span>
+                      <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                      <div class="price-banner">
+                        <i class="fas fa-bookmark"></i>
+                      </div>
+                    </figcaption>
+                  </div>
+                </div>
+    
+                <div class="product-item mb-4 ">
+                  <div class="exclusive-product">
+                    <figure class="product-img mb-0">
+                      <img src="../asset/item-15.png" alt="Bags (exclusive)" width="100%" height="100%">
+                    </figure>
+                    <figcaption class="product-description pt-1 pb-3 px-2">
+                      <span class="text-muted"><p class="product-text">Red Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                      <span class="text-dark"><b>₦ 20,090</b></span>
+                      <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                      <div class="price-banner">
+                        <i class="fas fa-bookmark"></i>
+                      </div>
+                    </figcaption>
+                  </div>
+                </div>
+      
+                <div class="product-item mb-4 ">
+                  <div class="exclusive-product">
+                    <figure class="product-img mb-0">
+                      <img src="../asset/item-12.png" alt="Watch (exclusive)" width="100%" height="100%">
+                    </figure>
+                    <figcaption class="product-description pt-1 pb-3 px-2">
+                      <span class="text-muted"><p class="product-text">Black Nike CORE SLIDES ADILETTE SHOWER</p></span>
+                      <span class="text-dark"><b>₦ 12,290</b></span>
+                      <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                      <div class="price-banner">
+                        <i class="fas fa-bookmark"></i>
+                      </div>
+                    </figcaption>
+                  </div>
+                </div>
+      
+                <div class="product-item mb-4 ">
+                  <div class="exclusive-product">
+                    <figure class="product-img mb-0">
+                      <img src="../asset/item-16.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                    </figure>
+                    <figcaption class="product-description pt-1 pb-3 px-2">
+                      <span class="text-muted"><p class="product-text">Black Stylish Acessories With Perfumes</p></span>
+                      <span class="text-dark"><b>₦ 52,290</b></span>
+                      <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                      <div class="price-banner">
+                        <i class="fas fa-bookmark"></i>
+                      </div>
+                    </figcaption>
+                  </div>
+                </div>
+    
+                <div class="product-item mb-4 ">
+                  <div class="exclusive-product">
+                    <figure class="product-img mb-0">
+                      <img src="../asset/item-9.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                    </figure>
+                    <figcaption class="product-description pt-1 pb-3 px-2">
+                      <span class="text-muted"><p class="product-text"> Green Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                      <span class="text-dark"><b>₦ 12,290</b></span>
+                      <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                      <div class="price-banner">
+                        <i class="fas fa-bookmark"></i>
+                      </div>
+                    </figcaption>
+                  </div>
+                </div>
+    
+                <div class="product-item mb-4 ">
+                  <div class="exclusive-product">
+                    <figure class="product-img mb-0">
+                      <img src="../asset/item-13.png" alt="Bags (exclusive)" width="100%" height="100%">
+                    </figure>
+                    <figcaption class="product-description pt-1 pb-3 px-2">
+                      <span class="text-muted"><p class="product-text">Blue Classic Charlotte Hand Bag</p></span>
+                      <span class="text-dark"><b>₦ 20,599</b></span>
+                      <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                      <div class="price-banner">
+                        <i class="fas fa-bookmark"></i>
+                      </div>
+                    </figcaption>
+                  </div>
+                </div>
+                
+                <div class="product-item mb-4 ">
+                  <div class="exclusive-product">
+                    <figure class="product-img mb-0">
+                      <img src="../asset/item-15.png" alt="Bags (exclusive)" width="100%" height="100%">
+                    </figure>
+                    <figcaption class="product-description pt-1 pb-3 px-2">
+                      <span class="text-muted"><p class="product-text">Red Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                      <span class="text-dark"><b>₦ 20,090</b></span>
+                      <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                      <div class="price-banner">
+                        <i class="fas fa-bookmark"></i>
+                      </div>
+                    </figcaption>
+                  </div>
+                </div>
+                
+                <div class="product-item mb-4 ">
+                  <div class="exclusive-product">
+                    <figure class="product-img mb-0">
+                      <img src="../asset/item-14.png" alt="Quality shirt (exclusive)" width="100%" height="100%">
+                    </figure>
+                    <figcaption class="product-description pt-1 pb-3 px-2">
+                      <span class="text-muted"><p class="product-text">Pairs of Round Neck Shirt</p></span>
+                      <span class="text-dark"><b>₦ 15,259</b></span>
+                      <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                      <div class="price-banner">
+                        <i class="fas fa-bookmark"></i>
+                      </div>
+                    </figcaption>
+                  </div>
+                </div>
+    
+                <div class="product-item mb-4 ">
+                  <div class="exclusive-product">
+                    <figure class="product-img mb-0">
+                      <img src="../asset/item-10.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                    </figure>
+                    <figcaption class="product-description pt-1 pb-3 px-2">
+                      <span class="text-muted"><p class="product-text">Red Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                      <span class="text-dark"><b>₦ 12,290</b></span>
+                      <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                      <div class="price-banner">
+                        <i class="fas fa-bookmark"></i>
+                      </div>
+                    </figcaption>
+                  </div>
+                </div>
+              </div>
+
+              <nav>
+                <div class="product-nav nav-left" onmousedown="nextScroll(0)"><span>&#10094</span></div>
+                <div class="product-nav nav-right" onmousedown="prevScroll(0)"><span>&#10095</span></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section - New Product -->
+      <section class="product container-fluid mt-5">
+        <div class="container">
+          <h2 class="mb-2">New Products</h2>
+          <div class="d-flex normal-container">
+              <div class="normal mb-4">
+                <div class="new-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-10.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text"> Orange Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                    <span class="text-dark"><b>₦ 12,290</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+  
+              <div class="normal mb-4">
+                <div class="new-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-15.png" alt="Bags (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Classic Charlotte Hand Bag</p></span>
+                    <span class="text-dark"><b>₦ 20,599</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+              
+              <div class="normal mb-4">
+                <div class="new-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-14.png" alt="Quality shirt (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Pairs of Round Neck Shirt</p></span>
+                    <span class="text-dark"><b>₦ 15,259</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+  
+              <div class="normal mb-4">
+                <div class="new-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-2.jpg" alt="vans shoes (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Classic Charlotte Hand Bag</p></span>
+                    <span class="text-dark"><b>₦ 12,290</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+  
+              <div class="normal mb-4">
+                <div class="new-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-15.png" alt="Bags (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Red Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                    <span class="text-dark"><b>₦ 20,090</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+    
+              <div class="normal mb-4">
+                <div class="new-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-12.png" alt="Watch (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Black Nike CORE SLIDES ADILETTE SHOWER</p></span>
+                    <span class="text-dark"><b>₦ 12,290</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+    
+              <div class="normal mb-4">
+                <div class="new-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-16.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Black Stylish Acessories With Perfumes</p></span>
+                    <span class="text-dark"><b>₦ 52,290</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+  
+              <div class="normal mb-4">
+                <div class="new-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-9.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text"> Green Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                    <span class="text-dark"><b>₦ 12,290</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+  
+              <div class="normal mb-4">
+                <div class="new-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-13.png" alt="Bags (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Blue Classic Charlotte Hand Bag</p></span>
+                    <span class="text-dark"><b>₦ 20,599</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+              
+              <div class="normal mb-4">
+                <div class="new-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-15.png" alt="Bags (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Red Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                    <span class="text-dark"><b>₦ 20,090</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+              
+              <div class="normal mb-4">
+                <div class="new-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-14.png" alt="Quality shirt (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Pairs of Round Neck Shirt</p></span>
+                    <span class="text-dark"><b>₦ 15,259</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+  
+              <div class="normal mb-4">
+                <div class="new-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-10.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Red Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                    <span class="text-dark"><b>₦ 12,290</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section - Fast Selling Product -->
+      <section class="product container-fluid mt-5">
+        <div class="container">
+          <h2>Fast Selling Products</h2>
+
+          <!--First Scrollable Product List -->
+          <div class="section-a position-relative w-100">
+            <div class="product-scroll product-flow">
+              <div class="product-item mb-4">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-10.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text"> Orange Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                    <span class="text-dark"><b>₦ 12,290</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+
+              <div class="product-item mb-4 ">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-15.png" alt="Bags (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Classic Charlotte Hand Bag</p></span>
+                    <span class="text-dark"><b>₦ 20,599</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+              
+              <div class="product-item mb-4 ">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-14.png" alt="Quality shirt (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Pairs of Round Neck Shirt</p></span>
+                    <span class="text-dark"><b>₦ 15,259</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+
+              <div class="product-item mb-4 ">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-2.jpg" alt="vans shoes (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Classic Charlotte Hand Bag</p></span>
+                    <span class="text-dark"><b>₦ 12,290</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+
+              <div class="product-item mb-4 ">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-15.png" alt="Bags (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Red Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                    <span class="text-dark"><b>₦ 20,090</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+    
+              <div class="product-item mb-4 ">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-12.png" alt="Watch (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Black Nike CORE SLIDES ADILETTE SHOWER</p></span>
+                    <span class="text-dark"><b>₦ 12,290</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+    
+              <div class="product-item mb-4 ">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-16.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Black Stylish Acessories With Perfumes</p></span>
+                    <span class="text-dark"><b>₦ 52,290</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+
+              <div class="product-item mb-4 ">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-9.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text"> Green Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                    <span class="text-dark"><b>₦ 12,290</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+
+              <div class="product-item mb-4 ">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-13.png" alt="Bags (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Blue Classic Charlotte Hand Bag</p></span>
+                    <span class="text-dark"><b>₦ 20,599</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+              
+              <div class="product-item mb-4 ">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-15.png" alt="Bags (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Red Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                    <span class="text-dark"><b>₦ 20,090</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+              
+              <div class="product-item mb-4 ">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-14.png" alt="Quality shirt (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Pairs of Round Neck Shirt</p></span>
+                    <span class="text-dark"><b>₦ 15,259</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+
+              <div class="product-item mb-4 ">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-10.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Red Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                    <span class="text-dark"><b>₦ 12,290</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+            </div>
+
+            <nav>
+              <div class="product-nav nav-left" onmousedown="nextScroll(1)">&#10094</div>
+              <div class="product-nav nav-right" onmousedown="prevScroll(1)">&#10095</div>
+            </nav>
+          </div>
+
+          <!--Second Scrollable Product List -->
+          <div class="section-b position-relative">
+            <div class="product-scroll product-flow">
+              <div class="product-item mb-4">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-10.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text"> Orange Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                    <span class="text-dark"><b>₦ 12,290</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+
+              <div class="product-item mb-4 ">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-15.png" alt="Bags (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Classic Charlotte Hand Bag</p></span>
+                    <span class="text-dark"><b>₦ 20,599</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+              
+              <div class="product-item mb-4 ">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-14.png" alt="Quality shirt (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Pairs of Round Neck Shirt</p></span>
+                    <span class="text-dark"><b>₦ 15,259</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+
+              <div class="product-item mb-4 ">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-2.jpg" alt="vans shoes (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Classic Charlotte Hand Bag</p></span>
+                    <span class="text-dark"><b>₦ 12,290</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+
+              <div class="product-item mb-4 ">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-15.png" alt="Bags (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Red Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                    <span class="text-dark"><b>₦ 20,090</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+    
+              <div class="product-item mb-4 ">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-12.png" alt="Watch (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Black Nike CORE SLIDES ADILETTE SHOWER</p></span>
+                    <span class="text-dark"><b>₦ 12,290</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+    
+              <div class="product-item mb-4 ">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-16.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Black Stylish Acessories With Perfumes</p></span>
+                    <span class="text-dark"><b>₦ 52,290</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+
+              <div class="product-item mb-4 ">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-9.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text"> Green Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                    <span class="text-dark"><b>₦ 12,290</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+
+              <div class="product-item mb-4 ">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-13.png" alt="Bags (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Blue Classic Charlotte Hand Bag</p></span>
+                    <span class="text-dark"><b>₦ 20,599</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+              
+              <div class="product-item mb-4 ">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-15.png" alt="Bags (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Red Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                    <span class="text-dark"><b>₦ 20,090</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+              
+              <div class="product-item mb-4 ">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-14.png" alt="Quality shirt (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Pairs of Round Neck Shirt</p></span>
+                    <span class="text-dark"><b>₦ 15,259</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+
+              <div class="product-item mb-4 ">
+                <div class="exclusive-product">
+                  <figure class="product-img mb-0">
+                    <img src="../asset/item-10.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                  </figure>
+                  <figcaption class="product-description pt-1 pb-3 px-2">
+                    <span class="text-muted"><p class="product-text">Red Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                    <span class="text-dark"><b>₦ 12,290</b></span>
+                    <div class="mt-3"><a onclick="addToCart()" class="point p-2 text-capitalize" href="#">Add to cart</a></div>
+                    <div class="price-banner">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </figcaption>
+                </div>
+              </div>
+            </div>
+
+            <nav>
+              <div class="product-nav nav-left" onmousedown="nextScroll(2)">&#10094</div>
+              <div class="product-nav nav-right" onmousedown="prevScroll(2)">&#10095</div>
+            </nav>
+          </div>
+        </div>
+      </section>
+          
+    
+      <!-- Top Brand -->
+      <section class="container-fluid text-center my-5">
+        <div class="container">
+          <h2>Top Brand</h2>
+          <figure class="brand mx-auto">
+            <img src="../asset/sponsors.png" alt="Brand Supporters" width="100%">
+            <img src="../asset/sponsors-1.png" alt="Brand Supporters" width="50%">
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+		<footer>
+			<div class="row mx-auto p-5 text-white text-center bg-light text-dark">
+				<div class="col-12 mb-3">
+					<h2 class="">Let’s keep the conversation going</h2>
+				</div>
+				<div class="col-12 mb-1">
+						<p>
+							Receive our newsletter and discover our stories, collections, and surprises.
+						</p>
+				</div>
+				<div class="col-12 w-100 mb-3">
+					<div class="row">
+							<form class="form-inline mx-auto">
+								<div class="form-group mb-2 mx-auto">
+									<label for="staticEmail2" class="sr-only">Email</label>
+									<input type="text" class="form-control mx-auto" id="staticEmail2" placeholder="email@example.com">
+								</div>
+								<button type="submit" class="btn btn-dark mb-2 mx-auto">Subcribe</button>
+							</form>
+					</div>
+				</div>
+				<div class="row mx-auto">
+					<div class="col-12 col-lg-6 col-sm-12 mx-auto">
+						<p>
+							By subscribing to our newsletter, you agree that your data will be processed in compliance with our General 
+								<a href="#" class="text-secondary">
+									Terms and Conditions of Use
+								</a> and our 
+								<a href="#" class="text-secondary">
+									Privacy Policy
+								</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row w-100 bg-light p-5 mx-auto mobile">
+				<div class="col-lg-3 col-md-6 col-sm-12 pt-3 pb-1">
+					<h1 class="text-dark">Services</h1>
+					<p>
+						<a href="./contact.html">Contact us</a>
+					</p>
+					<p> 
+						<a href="#">FAQ</a>
+					</p>
+					<p>
+						<a href="#">Find a store</a>
+					</p>
+					<p>
+						<a href="#">Gifting</a>
+					</p>
+					<p>
+						<a href="#">Made to</a>
+					</p>
+					<p>
+						<a href="#">Measure</a>
+					</p>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 pt-3 pb-1">
+					<h1 class="text-dark">
+						<a href="./detail/cart.html">Orders</a>
+					</h1>
+					<p>
+						<a href="#">Payment</a>
+					</p>
+					<p>
+						<a href="#">Shipping</a>
+					</p>
+					<p>
+						<a href="#">Find a store</a>
+					</p>
+					<p>
+						<a href="#">Gifting</a>
+					</p>
+					<p>
+						<a href="#">Collect in store</a>
+					</p>
+					<p>
+						<a href="./detail/track-order.html">Track orders</a>
+					</p>
+					<p>
+						<a href="#">Exchange &amp; returns</a>
+					</p>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 pt-3 pb-1">
+					<h1 class="">
+						<a href="./detail/cart.html">Cart</a>
+					</h1>
+					<p>
+						<a href="../index.html">Home</a>
+					</p>
+					<p>
+						<a href="#">Product</a>
+					</p>
+					<p>
+						<a href="./about.html">About us</a>
+					</p>
+					<p>
+						<a href="#">Gifting</a>
+					</p>
+					<p>
+						<a href="#">Collect in store</a>
+					</p>
+					<p>
+						<a href="./contact.html">Contact us</a>
+					</p>
+					<p>
+						<a href="./contact.html">Help</a>
+					</p>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 pt-3 pb-1">
+					<h1 class="text-dark">Legal</h1>
+					<p>
+						<a href="#">Terms and conditions</a>
+					</p>
+					<p>
+						<a href="#">Privacy &amp; cookies</a>
+					</p>
+					<p>
+						<a href="#">BCR</a>
+					</p>
+					<p>
+						<a href="#">Legal issues</a>
+					</p>
+					<p>
+						<a href="#">Accessibility</a>
+					</p>
+				</div>
+			</div>
+			<div class="footer-logo bg-light">
+				<div class="w-100 mx-auto px-5 mx-auto text-center">
+					<img src="../asset/icons/logo.png" class="mx-auto" alt="" srcset="">
+				</div>
+			</div>
+			<div class="text-center">
+				<div class="w-100 mx-auto bg-light px-5 py-2 mx-auto">
+					<p>&copy; 2020</p>
+				</div>
+			</div>
+		</footer>
+
+
+    <!-- jQuery first, then Popper.js, Fontawesome, then Bootstrap JS -->
+		<script src="../js/vendor/jquery-3.6.0.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="../js/vendor/all.js"></script>
+    <script src="../js/vendor/all.min.js"></script>
+    <script src="../js/vendor/fontawesome.js"></script>
+    <script src="../js/vendor/fontawesome.min.js"></script>
+    <script src="../js/vendor/bootstrap.min.js"></script>
+		<!-- Optional JS-->
+		<script>
+      var cartNumber = document.querySelector(".cart-number");
+      
+      function addToCart() {
+        cartNumber.innerHTML = Number(cartNumber.textContent) + 1;
+      }
+      
+      var scrollContainer = document.querySelectorAll(".product-scroll");
+      var leftNav = document.querySelectorAll(".nav-left");
+      var rightNav = document.querySelectorAll(".nav-right");
+
+      window.addEventListener('load', visibleButton, false)
+
+      setInterval(visibleButton, 500)
+
+      function visibleButton(){
+        scrollContainer.forEach((item, index) => {
+          var scrollPos = scrollContainer[index].scrollLeft;
+          var scrollMax = scrollContainer[index].scrollWidth - scrollContainer[index].clientWidth;
+          if (scrollPos === 0) {
+            leftNav[index].style.visibility = "hidden"
+          } else if (scrollPos >= scrollMax ){
+            rightNav[index].style.visibility = "hidden"
+          }else {
+            leftNav[index].style.visibility = "visible";
+            rightNav[index].style.visibility = "visible"
+          }
+        })
+      }
+
+      function nextScroll(index) {
+          scrollContainer[index].scrollLeft -= 230;
+        }
+        
+        function prevScroll(index) {
+          scrollContainer[index].scrollLeft += 230;
+      }
+    </script>
+    
+  </body>
+</html>

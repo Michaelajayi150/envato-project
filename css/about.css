@@ -1,0 +1,209 @@
+
+/* Section - Hero */
+#hero-img {
+  position: absolute;
+  width: 100%;
+  background: url('../asset/background-4.png') no-repeat;
+  background-color: palevioletred;
+  background-blend-mode: lighten;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.5; */
+  height: 2px;
+  max-height: 597px;
+  z-index: 1;
+}
+
+.hero {
+  cursor: grab;
+  width: 100%;
+  height: 597px;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-bg {
+  position: relative;
+  /* background-image: linear-gradient(rgba(7, 3, 26, 0.5),rgba(0,0,0,1.7)), url(../img/Group\ 59.png); */
+  background: url('../asset/background-4.png') no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 597px;
+}
+
+.hero-bg > div {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+
+.hero h2 {
+  position: relative;
+  font-size: 72px;
+  color: #000;
+  z-index: 1;
+  transition: 2s ease-out;
+}
+
+.hero p {
+  position: relative;
+  font-size: 24px;
+  z-index: 1;
+  transition: 2s ease-out;
+  transition-delay: 0.1s;
+}
+
+/* Section - Why Us */
+.why-us {
+  text-align: center;
+}
+
+.why-us figure img {
+  width: 80px;
+  height: 80px;
+}
+
+.why-us figcaption {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.why-us, .who, .product, .testimony, .awards {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* Section Who */
+.who h3, .testimony h3, .awards h3 {
+  font-size: 36px;
+  margin-bottom: 1rem;
+}
+
+.who p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* Section - Testimony */
+.testimony h3 {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.testimony .col-md {
+  margin-right: 3rem;
+  padding: 2rem;
+  text-align: left;
+  border-radius: 7px;
+}
+
+.testimony .col-md:last-child {
+  margin-right: 0;
+}
+
+.testimony img.rounded-circle {
+  max-width: 70.25px;
+  margin-right: .75rem;
+}
+
+.testimony span {
+  display: block;
+  font-size: 16.861px;
+}
+
+.vice {
+  display: block;
+  height: auto;
+}
+
+.testimony h6 {
+  color: #000;
+  font-size: 16.861px;
+  margin-bottom: 0;
+}
+
+.testimony p {
+  font-size: 13px;
+  line-height: 17px;
+}
+
+/* Awards */
+.awards h3 {
+  font-size: 40px;
+  margin-bottom: 3rem;
+}
+
+.awards p {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  #hero-img {
+    position: absolute;
+    width: 100%;
+    background: url('../asset/background-3.jpg') no-repeat;
+    background-color: palevioletred;
+    background-blend-mode: lighten;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.5; */
+    height: 2px;
+    max-height: 597px;
+    z-index: 1;
+  }
+
+  .hero-bg {
+    position: relative;
+    background: url('../asset/background-3.jpg') no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 597px;
+  }
+
+  .hero .hero-description-sm {
+    padding: 2rem 3rem;
+  }
+
+  .hero .hero-description-sm h2 {
+    font-size: 36px;
+  }
+
+  .why-us .col-md, .who .col-md:first-child {
+    margin-bottom: 2rem;
+  }
+
+  .why-us .col-md:last-child, .product .col-md:last-child, .testimony .col-md:last-child {
+    margin-bottom: 0;
+  }
+
+  .product .col-md {
+    margin-bottom: 3.5rem;
+  }
+
+  .testimony .col-md {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .awards img {
+    width: 65px;
+  }
+
+  .awards img.lg {
+    width: 100px;
+  }
+
+  .awards p {
+    font-size: 10px;
+  }
+
+  .vice {
+    display: none;
+    height: 0;
+  }
+}

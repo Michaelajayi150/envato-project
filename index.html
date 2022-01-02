@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+    Gu_Ru Code
+
+  -->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/vendor/fontawesome.css">
+    <link rel="stylesheet" href="./css/vendor/fontawesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/header-footer.css"> <!-- Use this link for your pages CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Cart | Home</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-secondary">
+      <nav class="navbar navbar-expand-md navbar-light bg-secondary py-1">
+        <a class="navbar-brand" href="#"><img src="./asset/icons/logo.png" width="80" alt="Cart"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav d-flex align-items-center ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link current" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./src/products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./src/about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./src/contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item d-none d-md-block">
+              <a class="nav-link" href="#"><img src="./asset/icons/svg/search.svg" alt="search"></a>
+            </li>
+            <li class="nav-item btn bg-primary">
+              <a class="nav-link" href="./src/user-page/login.html">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./src/user-page/cart.html"><img src="./asset/icons/svg/cart.svg" width="35" alt="cart"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  
+    <main>
+      <!-- Section - Hero -->
+			<section class="hero">
+        <div class="hero-description-sm hero-bg">
+          <img src="./asset/background.png" width="100%" height="100%" id="hero" alt="Background Image">
+          <div class="text bg-primary">
+            <p>Get up to 50% Today</p>
+            <h2>Shoe Collection</h2>
+          </div>
+          <!-- The dots/circles -->
+					<div class="click-dot text-center">
+						<div class="dot" onclick="currentSlide(0)"></div>
+						<div class="dot" onclick="currentSlide(1)"></div>
+						<div class="dot" onclick="currentSlide(2)"></div>
+					</div>
+        </div>
+      </section>
+      
+      <!-- Exclusive Product -->
+      <section class="product container-fluid mt-5">
+        <div class="container">
+          <h2 class="mb-2">Exclusive Products</h2>
+          <div class="d-flex normal-container">
+            <div class="normal mb-4">
+              <div class="exclusive-product">
+                <figure class="product-img mb-0">
+                  <img src="./asset/item-9.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                </figure>
+                <figcaption class="product-description pt-1 pb-3 px-2">
+                  <span class="text-muted"><p class="product-text"> Green Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                  <span class="text-dark"><b>₦ 12,290</b></span><br>
+                  <small><s>₦ 13,050</s></small>
+                  <div class="price-banner">
+                    <i class="fas fa-bookmark"></i>
+                    <span class="text-white price-text">39%</span>
+                  </div>
+                </figcaption>
+              </div>
+            </div>
+
+            <div class="normal mb-4">
+              <div class="exclusive-product">
+                <figure class="product-img mb-0">
+                  <img src="./asset/item-13.png" alt="Bags (exclusive)" width="100%" height="100%">
+                </figure>
+                <figcaption class="product-description pt-1 pb-3 px-2">
+                  <span class="text-muted"><p class="product-text">Blue Classic Charlotte Hand Bag</p></span>
+                  <span class="text-dark"><b>₦ 20,599</b></span><br>
+                  <small><s>₦ 21,500</s></small>
+                  <div class="price-banner">
+                    <i class="fas fa-bookmark"></i>
+                    <span class="text-white price-text">42%</span>
+                  </div>
+                </figcaption>
+              </div>
+            </div>
+            
+            <div class="normal mb-4">
+              <div class="exclusive-product">
+                <figure class="product-img mb-0">
+                  <img src="./asset/item-14.png" alt="Quality shirt (exclusive)" width="100%" height="100%">
+                </figure>
+                <figcaption class="product-description pt-1 pb-3 px-2">
+                  <span class="text-muted"><p class="product-text">Pairs of Round Neck Shirt</p></span>
+                  <span class="text-dark"><b>₦ 15,259</b></span><br>
+                  <small><s>₦ 16,400</s></small>
+                  <div class="price-banner">
+                    <i class="fas fa-bookmark"></i>
+                    <span class="text-white price-text">34%</span>
+                  </div>
+                </figcaption>
+              </div>
+            </div>
+
+            <div class="normal mb-4">
+              <div class="exclusive-product">
+                <figure class="product-img mb-0">
+                  <img src="./asset/item-10.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                </figure>
+                <figcaption class="product-description pt-1 pb-3 px-2">
+                  <span class="text-muted"><p class="product-text">Red Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                  <span class="text-dark"><b>₦ 12,290</b></span><br>
+                  <small><s>₦ 13,050</s></small>
+                  <div class="price-banner">
+                    <i class="fas fa-bookmark"></i>
+                    <span class="text-white price-text">45%</span>
+                  </div>
+                </figcaption>
+              </div>
+            </div>
+
+            <div class="normal mb-4">
+              <div class="exclusive-product">
+                <figure class="product-img mb-0">
+                  <img src="./asset/item-15.png" alt="Bags (exclusive)" width="100%" height="100%">
+                </figure>
+                <figcaption class="product-description pt-1 pb-3 px-2">
+                  <span class="text-muted"><p class="product-text">Red Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                  <span class="text-dark"><b>₦ 20,090</b></span><br>
+                  <small><s>₦ 22,940</s></small>
+                  <div class="price-banner">
+                    <i class="fas fa-bookmark"></i>
+                    <span class="text-white price-text">41%</span>
+                  </div>
+                </figcaption>
+              </div>
+            </div>
+  
+            <div class="normal mb-4">
+              <div class="exclusive-product">
+                <figure class="product-img mb-0">
+                  <img src="./asset/item-12.png" alt="Watch (exclusive)" width="100%" height="100%">
+                </figure>
+                <figcaption class="product-description pt-1 pb-3 px-2">
+                  <span class="text-muted"><p class="product-text">Black Nike CORE SLIDES ADILETTE SHOWER</p></span>
+                  <span class="text-dark"><b>₦ 12,290</b></span><br>
+                  <small><s>₦ 13,050</s></small>
+                  <div class="price-banner">
+                    <i class="fas fa-bookmark"></i>
+                    <span class="text-white price-text">39%</span>
+                  </div>
+                </figcaption>
+              </div>
+            </div>
+  
+            <div class="normal mb-4">
+              <div class="exclusive-product">
+                <figure class="product-img mb-0">
+                  <img src="./asset/item-16.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                </figure>
+                <figcaption class="product-description pt-1 pb-3 px-2">
+                  <span class="text-muted"><p class="product-text">Black Stylish Acessories With Perfumes</p></span>
+                  <span class="text-dark"><b>₦ 52,290</b></span><br>
+                  <small><s>₦ 53,550</s></small>
+                  <div class="price-banner">
+                    <i class="fas fa-bookmark"></i>
+                    <span class="text-white price-text">29%</span>
+                  </div>
+                </figcaption>
+              </div>
+            </div>
+
+            <div class="normal mb-4">
+              <div class="exclusive-product">
+                <figure class="product-img mb-0">
+                  <img src="./asset/item-9.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                </figure>
+                <figcaption class="product-description pt-1 pb-3 px-2">
+                  <span class="text-muted"><p class="product-text"> Green Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                  <span class="text-dark"><b>₦ 12,290</b></span><br>
+                  <small><s>₦ 13,050</s></small>
+                  <div class="price-banner">
+                    <i class="fas fa-bookmark"></i>
+                    <span class="text-white price-text">39%</span>
+                  </div>
+                </figcaption>
+              </div>
+            </div>
+
+            <div class="normal mb-4">
+              <div class="exclusive-product">
+                <figure class="product-img mb-0">
+                  <img src="./asset/item-13.png" alt="Bags (exclusive)" width="100%" height="100%">
+                </figure>
+                <figcaption class="product-description pt-1 pb-3 px-2">
+                  <span class="text-muted"><p class="product-text">Blue Classic Charlotte Hand Bag</p></span>
+                  <span class="text-dark"><b>₦ 20,599</b></span><br>
+                  <small><s>₦ 21,500</s></small>
+                  <div class="price-banner">
+                    <i class="fas fa-bookmark"></i>
+                    <span class="text-white price-text">42%</span>
+                  </div>
+                </figcaption>
+              </div>
+            </div>
+            
+            <div class="normal mb-4">
+              <div class="exclusive-product">
+                <figure class="product-img mb-0">
+                  <img src="./asset/item-15.png" alt="Bags (exclusive)" width="100%" height="100%">
+                </figure>
+                <figcaption class="product-description pt-1 pb-3 px-2">
+                  <span class="text-muted"><p class="product-text">Red Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                  <span class="text-dark"><b>₦ 20,090</b></span><br>
+                  <small><s>₦ 22,940</s></small>
+                  <div class="price-banner">
+                    <i class="fas fa-bookmark"></i>
+                    <span class="text-white price-text">41%</span>
+                  </div>
+                </figcaption>
+              </div>
+            </div>
+            
+            <div class="normal mb-4">
+              <div class="exclusive-product">
+                <figure class="product-img mb-0">
+                  <img src="./asset/item-14.png" alt="Quality shirt (exclusive)" width="100%" height="100%">
+                </figure>
+                <figcaption class="product-description pt-1 pb-3 px-2">
+                  <span class="text-muted"><p class="product-text">Pairs of Round Neck Shirt</p></span>
+                  <span class="text-dark"><b>₦ 15,259</b></span><br>
+                  <small><s>₦ 16,400</s></small>
+                  <div class="price-banner">
+                    <i class="fas fa-bookmark"></i>
+                    <span class="text-white price-text">34%</span>
+                  </div>
+                </figcaption>
+              </div>
+            </div>
+
+            <div class="normal mb-4">
+              <div class="exclusive-product">
+                <figure class="product-img mb-0">
+                  <img src="./asset/item-10.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                </figure>
+                <figcaption class="product-description pt-1 pb-3 px-2">
+                  <span class="text-muted"><p class="product-text">Red Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                  <span class="text-dark"><b>₦ 12,290</b></span><br>
+                  <small><s>₦ 13,050</s></small>
+                  <div class="price-banner">
+                    <i class="fas fa-bookmark"></i>
+                    <span class="text-white price-text">39%</span>
+                  </div>
+                </figcaption>
+              </div>
+            </div>
+            
+          </div>
+          
+          <div class="row d-none d-lg-flex mt-2">
+          </div>
+        </div>
+      </section>
+
+      <!-- Other Collection -->
+      <section class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 back-move mt-3">
+              <div class="collection-text bg-white">
+                <h5 class="text-dark">Super Sale</h5>
+                <h4 class="text-dark">NEW COLLECTION</h4>
+                <div><span class="bg-primary py-1 px-3 text-center"><a class="point text-dark" href="#">SHOP NOW </a></span></div>
+              </div>
+              <img src="./asset/background-2.png" alt="collection-background" width="100%">
+            </div>
+            <div class="col-md-6 back-move mt-3">
+              <div class="collection-text bg-white">
+                <h5 class="text-dark">Super Sale</h5>
+                <h4 class="text-dark">NEW COLLECTION</h4>
+                <div><span class="bg-primary py-1 px-3 text-center"><a class="point text-dark" href="#">SHOP NOW </a></span></div>
+              </div>
+              <img src="./asset/background-1.png" alt="collection-background" width="100%">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trending Product -->
+      <section class="product container-fluid mt-5">
+        <div class="container">
+          <h2>Trending Products</h2>
+          <div class="d-flex normal-container">
+            <div class="normal mb-4">
+              <div class="exclusive-product">
+                <figure class="product-img mb-0">
+                  <img src="./asset/item-8.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                </figure>
+                <figcaption class="product-description pt-1 pb-3 px-2">
+                  <span class="text-muted"><p class="product-text">Blue Speaker Squid Game </p></span>
+                  <span class="text-dark"><b>₦ 6,890</b></span><br>
+                  <small><s>₦ 7,050</s></small>
+                  <div class="price-banner">
+                    <i class="fas fa-bookmark"></i>
+                    <span class="text-white price-text">30%</span>
+                  </div>
+                </figcaption>
+              </div>
+            </div>
+
+            <div class="normal mb-4">
+              <div class="exclusive-product">
+                <figure class="product-img mb-0">
+                  <img src="./asset/item-7.png" alt="Bags (exclusive)" width="100%" height="100%">
+                </figure>
+                <figcaption class="product-description pt-1 pb-3 px-2">
+                  <span class="text-muted"><p class="product-text">White Apple Airpod Bluetooth</p></span>
+                  <span class="text-dark"><b>₦ 20,599</b></span><br>
+                  <small><s>₦ 21,500</s></small>
+                  <div class="price-banner">
+                    <i class="fas fa-bookmark"></i>
+                    <span class="text-white price-text">15%</span>
+                  </div>
+                </figcaption>
+              </div>
+            </div>
+            
+            <div class="normal mb-4">
+              <div class="exclusive-product">
+                <figure class="product-img mb-0">
+                  <img src="./asset/item-14.png" alt="Quality shirt (exclusive)" width="100%" height="100%">
+                </figure>
+                <figcaption class="product-description pt-1 pb-3 px-2">
+                  <span class="text-muted"><p class="product-text">Pairs of Round Neck Shirt</p></span>
+                  <span class="text-dark"><b>₦ 15,259</b></span><br>
+                  <small><s>₦ 16,400</s></small>
+                  <div class="price-banner">
+                    <i class="fas fa-bookmark"></i>
+                    <span class="text-white price-text">34%</span>
+                  </div>
+                </figcaption>
+              </div>
+            </div>
+
+            <div class="normal mb-4">
+              <div class="exclusive-product">
+                <figure class="product-img mb-0">
+                  <img src="./asset/item-10.png" alt="vans shoes (exclusive)" width="100%" height="100%">
+                </figure>
+                <figcaption class="product-description pt-1 pb-3 px-2">
+                  <span class="text-muted"><p class="product-text">Red Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                  <span class="text-dark"><b>₦ 12,290</b></span><br>
+                  <small><s>₦ 13,050</s></small>
+                  <div class="price-banner">
+                    <i class="fas fa-bookmark"></i>
+                    <span class="text-white price-text">39%</span>
+                  </div>
+                </figcaption>
+              </div>
+            </div>
+
+            <div class="normal mb-4">
+              <div class="exclusive-product">
+                <figure class="product-img mb-0">
+                  <img src="./asset/item-15.png" alt="Bags (exclusive)" width="100%" height="100%">
+                </figure>
+                <figcaption class="product-description pt-1 pb-3 px-2">
+                  <span class="text-muted"><p class="product-text">Red Vans CORE SLIDES ADILETTE SHOWER</p></span>
+                  <span class="text-dark"><b>₦ 20,090</b></span><br>
+                  <small><s>₦ 22,940</s></small>
+                  <div class="price-banner">
+                    <i class="fas fa-bookmark"></i>
+                    <span class="text-white price-text">41%</span>
+                  </div>
+                </figcaption>
+              </div>
+            </div>
+  
+            <div class="normal mb-4">
+              <div class="exclusive-product">
+                <figure class="product-img mb-0">
+                  <img src="./asset/item-12.png" alt="Watch (exclusive)" width="100%" height="100%">
+                </figure>
+                <figcaption class="product-description pt-1 pb-3 px-2">
+                  <span class="text-muted"><p class="product-text">Black Nike CORE SLIDES ADILETTE SHOWER</p></span>
+                  <span class="text-dark"><b>₦ 12,290</b></span><br>
+                  <small><s>₦ 13,050</s></small>
+                  <div class="price-banner">
+                    <i class="fas fa-bookmark"></i>
+                    <span class="text-white price-text">39%</span>
+                  </div>
+                </figcaption>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Other Collection -->
+      <section class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 back-move mt-3">
+              <div class="collection-text bg-white">
+                <h5 class="text-dark">Discount Sales</h5>
+                <h4 class="text-dark">NEW COLLECTION</h4>
+                <div><span class="bg-primary py-1 px-3 text-center"><a class="point text-dark" href="#">SHOP NOW </a></span></div>
+              </div>
+              <img src="./asset/background-3.jpg" alt="collection-background" width="100%">
+            </div>
+            <div class="col-md-6 back-move mt-3">
+              <div class="collection-text bg-white">
+                <h5 class="text-dark">Discount Sales</h5>
+                <h4 class="text-dark">NEW COLLECTION</h4>
+                <div><span class="bg-primary py-1 px-3 text-center"><a class="point text-dark" href="#">SHOP NOW </a></span></div>
+              </div>
+              <img src="./asset/main_fashion-design-cover-2.jpg" alt="collection-background" width="100%" height="100%">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Top Brand -->
+      <section class="container-fluid text-center my-5">
+        <div class="container">
+          <h2>Top Brand</h2>
+          <figure class="brand mx-auto">
+            <img src="./asset/sponsors.png" alt="Brand Supporters" width="100%">
+            <img src="./asset/sponsors-1.png" alt="Brand Supporters" width="50%">
+          </figure>
+        </div>
+      </section>
+
+      <!-- Section - Why Us -->
+			<section class="why-us">
+				<div class="">
+					<div class="grid-row mx-auto">
+						<figure class="grid-row-item bg-light mx-auto">
+							<img src="./asset/icons/svg/transport.svg" class="img-fluid" width="100%" alt="icon">
+							<figcaption>
+								<h4 class="text-dark"> Fast Delivery </h4>
+                <p> Worldwide </p>
+							</figcaption>
+						</figure>
+						<figure class="grid-row-item bg-light mx-auto">
+							<img src="./asset/icons/customer-care.png" class="img-fluid" width="100%" height="100%" alt="icon">
+							<figcaption>
+								<h4 class="text-dark"> 24/7 Online </h4>
+                <p> Customer Support </p>
+							</figcaption>
+						</figure>
+						<figure class="grid-row-item bg-light mx-auto">
+							<img src="./asset/icons/svg/customer-care.svg" class="img-fluid" width="100%" alt="icon">
+							<figcaption>
+								<h4 class="text-dark"> Payment Security</h4>
+                <p> Safe Payment </p>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</section>
+		</main>
+
+    <!-- Footer -->
+		<footer>
+			<div class="row mx-auto p-5 text-white text-center bg-light text-dark">
+				<div class="col-12 mb-3">
+					<h2 class="mainOrange">Let’s keep the conversation going</h2>
+				</div>
+				<div class="col-12 mb-1">
+						<p>
+							Receive our newsletter and discover our stories, collections, and surprises.
+						</p>
+				</div>
+				<div class="col-12 w-100 mb-3">
+					<div class="row">
+            <form class="form-inline mx-auto">
+              <div class="form-group mb-2 mx-auto">
+                <label for="staticEmail2" class="sr-only">Email</label>
+                <input type="text" class="form-control mx-auto" id="staticEmail2" placeholder="email@example.com">
+              </div>
+              <button type="submit" class="btn btn-dark mb-2 mx-auto">Subcribe</button>
+            </form>
+        </div>
+				</div>
+				<div class="row mx-auto">
+					<div class="col-8 col-lg-6 col-sm-12 mx-auto">
+						<p>
+							By subscribing to our newsletter, you agree that your data will be processed in compliance with our General 
+								<a href="#" class="text-secondary">
+									Terms and Conditions of Use
+								</a> and our 
+								<a href="#" class="text-secondary">
+									Privacy Policy
+								</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row w-100 bg-light p-5 mx-auto mobile">
+				<div class="col-lg-3 col-md-6 col-sm-12 pt-3 pb-1">
+					<h1 class="text-dark">Services</h1>
+					<p>
+						<a href="./src/contact.html">Contact us</a>
+					</p>
+					<p> 
+						<a href="#">FAQ</a>
+					</p>
+					<p>
+						<a href="#">Find a store</a>
+					</p>
+					<p>
+						<a href="#">Gifting</a>
+					</p>
+					<p>
+						<a href="#">Made to</a>
+					</p>
+					<p>
+						<a href="#">Measure</a>
+					</p>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 pt-3 pb-1">
+					<h1 class="text-dark">
+						<a href="./src/detail/cart.html">Orders</a></h1>
+					<p>
+						<a href="#">Payment</a>
+					</p>
+					<p>
+						<a href="#">Shipping</a>
+					</p>
+					<p>
+						<a href="#">Find a store</a>
+					</p>
+					<p>
+						<a href="#">Gifting</a>
+					</p>
+					<p>
+						<a href="#">Collect in store</a>
+					</p>
+					<p>
+						<a href="./src/detail/track-order.html">Track orders</a>
+					</p>
+					<p>
+						<a href="#">Exchange &amp; returns</a>
+					</p>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 pt-3 pb-1">
+					<h1 class="">
+						<a href="./src/detail/cart.html">Cart</a>
+					</h1>
+					<p>
+						<a href="#">Home</a>
+					</p>
+					<p>
+						<a href="./src/products.html">Product</a>
+					</p>
+					<p>
+						<a href="./src/about.html">About us</a>
+					</p>
+					<p>
+						<a href="#">Gifting</a>
+					</p>
+					<p>
+						<a href="#">Collect in store</a>
+					</p>
+					<p>
+						<a href="./src/contact.html">Contact us</a>
+					</p>
+					<p>
+						<a href="./src/contact.html">Help</a>
+					</p>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 pt-3 pb-1">
+					<h1 class="text-dark">Legal</h1>
+					<p>
+						<a href="#">Terms and conditions</a>
+					</p>
+					<p>
+						<a href="#">Privacy &amp; cookies</a>
+					</p>
+					<p>
+						<a href="#">BCR</a>
+					</p>
+					<p>
+						<a href="#">Legal issues</a>
+					</p>
+					<p>
+						<a href="#">Accessibility</a>
+					</p>
+				</div>
+			</div>
+			<div class="footer-logo bg-light">
+				<div class="w-100 mx-auto px-5 mx-auto text-center">
+					<img src="./asset/icons/logo.png" class="mx-auto" alt="" srcset="">
+				</div>
+			</div>
+			<div class="text-center">
+				<div class="w-100 mx-auto bg-light px-5 py-2 mx-auto">
+					<p>&copy; 2020</p>
+				</div>
+			</div>
+		</footer>
+
+
+    <!-- jQuery first, then Popper.js, Fontawesome, then Bootstrap JS -->
+		<script src="./js/vendor/jquery-3.6.0.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="./js/vendor/all.js"></script>
+    <script src="./js/vendor/all.min.js"></script>
+    <script src="./js/vendor/fontawesome.js"></script>
+    <script src="./js/vendor/fontawesome.min.js"></script>
+    <script src="./js/vendor/bootstrap.min.js"></script>
+		<!-- Optional JS-->
+		<script src="./js/main.js"></script>
+    
+  </body>
+</html>
