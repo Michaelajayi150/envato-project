@@ -82,7 +82,7 @@ input[name="colour-choice"]:checked + .colour-choice-range {
 }
 
 .normal {
-  max-width: 150px;
+  max-width: 170px;
   position: relative;
   padding: 0px 0.25rem 10px;
 }
@@ -178,18 +178,6 @@ input[name="colour-choice"]:checked + .colour-choice-range {
   margin-left: auto;
 }
 
-/* .product .product-img.product1 {
-  background: url('../img/Rectangle\ 11-3.png') no-repeat center center/cover;
-}
-
-.product .product-img.product2 {
-  background: url('../img/skirt-5304133_1280.jpg') no-repeat center center/cover;
-}
-
-.product .product-img.product3 {
-  background: url('../img/fashion-5205675_1280.jpg') no-repeat center center/cover;
-} */
-
 .product-description h5 {
   margin-top: 1.5rem;
   color: #000;
@@ -200,26 +188,6 @@ input[name="colour-choice"]:checked + .colour-choice-range {
   line-height: 28px;
   color: #263238;
 }
-
-/* @media only screen and (max-width: 1183px) {
-  .amount {
-    display: block;
-  }
-
-  .amount .cart-plus {
-    margin-right: auto;
-  }
-}
-
-@media only screen and (max-width: 971px) {
-  .amount {
-    display: flex;
-  }
-  
-  .amount .cart-plus {
-    margin-left: auto;
-  }
-} */
 
 @media only screen and (max-width: 578px) {
   .container {

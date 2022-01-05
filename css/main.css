@@ -1,7 +1,7 @@
 /* Section - Hero */
 #hero {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   z-index: 1;
 }
 
@@ -13,7 +13,7 @@
   background-position: center;
   background-size: cover;
   background-color: #f2bb3c;
-  height: 90vh;
+  height: 80vh;
 }
 
 .hero-bg .text {
@@ -162,14 +162,22 @@
 }
 
 .normal {
-  max-width: 150px;
+  max-width: 170px;
   position: relative;
   padding: 0px 0.25rem 10px;
 }
 
 
 /* Screen Below 916px */
-@media (max-width: 916px) {
+@media only screen and (max-width: 916px) {
+  #hero {
+    height: 50vh;
+  }
+  
+  .hero-bg {
+    height: 50vh;
+  }
+
   .grid-row {
     width: 80%;
     grid-template-columns: 1fr 1fr;

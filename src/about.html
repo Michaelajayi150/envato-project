@@ -26,7 +26,7 @@
   <body>
     <!-- Header -->
     <header class="bg-secondary">
-      <nav class="navbar navbar-expand-lg navbar-light bg-secondary py-1">
+      <nav class="navbar navbar-expand-md navbar-light bg-secondary py-1">
         <a class="navbar-brand" href="#"><img src="../asset/icons/logo.png" width="100" alt="Cart"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -45,7 +45,7 @@
             <li class="nav-item">
               <a class="nav-link" href="./contact.html">Contact Us</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-none d-md-block">
               <a class="nav-link" href="#"><img src="../asset/icons/svg/search.svg" alt="search"></a>
             </li>
             <li class="nav-item btn bg-primary">
@@ -74,8 +74,8 @@
 			<!-- Section - Why Us -->
 			<section class="why-us container-fluid">
 				<div class="container">
-					<div class="row d-flex align-items-center">
-						<figure class="col-md">
+					<div class="d-flex flex-wrap justify-content-around">
+						<figure>
 							<img src="../asset/icons/svg/card.svg" class="img-fluid mb-3" width="100%" alt="icon">
 							<figcaption>
 								100% Secured Payment <br />
@@ -83,7 +83,7 @@
 								Money back gaurantee
 							</figcaption>
 						</figure>
-						<figure class="col-md">
+						<figure>
 							<img src="../asset/icons/svg/transport.svg" class="img-fluid mb-3" width="100%" alt="icon">
 							<figcaption>
 								Deliver just at the <br />
@@ -91,7 +91,7 @@
 								All over the world effectively
 							</figcaption>
 						</figure>
-						<figure class="col-md">
+						<figure>
 							<img src="../asset/icons/svg/customer-care.svg" class="img-fluid mb-3" width="100%" alt="icon">
 							<figcaption>
 								Assisting Our Customers <br />
@@ -107,13 +107,16 @@
 			<section class="who container-fluid bg-secondary">
 				<div class="container">
 					<div class="row d-flex align-items-center">
-						<div class="col-md text-center px-5">
+						<div class="col-md-6 col-12 text-center px-5">
 							<h3>Who We Are</h3>
+							<figure class="d-block d-md-none">
+								<img src="../asset/main_fashion-design-cover-1.jpg" id="personality" class="img-fluid" alt="who-we-are" width="100%">
+							</figure>
 							<!-- Personality Text -->
 							<p id="personality-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ad nam atque cumque sint dicta. Perferendis nisi ipsum rerum culpa nihil, minima excepturi magni accusamus quibusdam hic.</p>
 						</div>
 						<!-- Source of Personality Images -->
-						<div class="col-md">
+						<div class="col-md-6 d-md-block d-none">
 							<img src="../asset/main_fashion-design-cover-1.jpg" id="personality" class="img-fluid" alt="who-we-are">
 						</div>
 					</div>
@@ -122,22 +125,22 @@
 			
 			<!-- Section - Testimony -->
 			<section class="testimony container-fluid bg-primary">
-				<div class="container text-center">
+				<div class="text-center px-2">
 					<h3>What People Say About Us</h3>
 					<!-- Slideshow container -->
 					<div class="slideshow-container">
 						
 						<!-- Full-width images with number and caption text -->
 						<div class="mySlides">
-							<div class="row">
-								<div class="col-md bg-white">
+							<div class="d-flex normal-container">
+								<div class="normal bg-white">
 									<div class="d-flex align-items-center mb-3">
 										<img src="../asset/blog-profile-pic-2.png" class="img-fluid rounded-circle" alt="testimony">
 										<div>
 											<h6>Christina Mark</h6>
 											<span>USA</span>
 											<!-- Rating Stars -->
-                      <div class="mt-3">
+                      <div class="rating mt-1">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -146,19 +149,19 @@
                       </div>
 										</div>
 									</div>
-									<div>
+									<div class="module">
 										<span class="mb-2">Excellent</span>
 										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quod unde ad aut velit quia iusto veniam dolorem ipsam, est nulla omnis aliquid ullam impedit consequuntur excepturi consequatur quisquam iure.</p>
 									</div>
 								</div>
-								<div class="col-md vice bg-white">
+								<div class="normal bg-white">
 									<div class="d-flex align-items-center mb-3">
 										<img src="../asset/blog-profile-pic-3.png" class="img-fluid rounded-circle" alt="testimony">
 										<div>
 											<h6>John Crush</h6>
 											<span>Brazil</span>
 											<!-- Rating Stars -->
-                      <div class="mt-3">
+                      <div class="rating mt-1">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -167,19 +170,19 @@
                       </div>
 										</div>
 									</div>
-									<div>
+									<div class="module">
 										<span class="mb-2">Brilliant!</span>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium distinctio voluptates, in cupiditate itaque ratione voluptas optio provident numquam. Quis commodi sapiente ducimus.</p>
 									</div>
 								</div>
-								<div class="col-md vice bg-white">
+								<div class="normal bg-white">
 									<div class="d-flex align-items-center mb-3">
 										<img src="../asset/blog-profile-pic-1.png" class="img-fluid rounded-circle" alt="testimony">
 										<div>
 											<h6>Mary Cooly</h6>
 											<span>Denmark</span>
 											<!-- Rating Stars -->
-                      <div class="mt-3">
+                      <div class="rating mt-1">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -188,7 +191,7 @@
                       </div>
 										</div>
 									</div>
-									<div>
+									<div class="module">
 										<span class="mb-2">Brilliant!</span>
 										<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, ratione. At totam enim maiores inventore architecto veritatis, tempora vel fugiat earum.</p>
 									</div>
@@ -197,15 +200,15 @@
 						</div>
 						
 						<div class="mySlides">
-							<div class="row">
-								<div class="col-md vice bg-white">
+							<div class="d-flex normal-container">
+								<div class="normal bg-white">
 									<div class="d-flex align-items-center mb-3">
 										<img src="../asset/blog-profile-pic-2.png" class="img-fluid rounded-circle" alt="testimony">
 										<div>
 											<h6>Christina Mark</h6>
 											<span>Germany</span>
 											<!-- Rating Stars -->
-                      <div class="mt-3">
+                      <div class="rating mt-1">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -214,19 +217,19 @@
                       </div>
 										</div>
 									</div>
-									<div>
+									<div class="module">
 										<span class="mb-2">Excellent</span>
 										<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, molestias? Qui reprehenderit vero ullam totam? Sequi, quis blanditiis qui assumenda accusantium numquam hic enim.</p>
 									</div>
 								</div>
-								<div class="col-md vice bg-white">
+								<div class="normal bg-white">
 									<div class="d-flex align-items-center mb-3">
 										<img src="../asset/blog-profile-pic-1.png" class="img-fluid rounded-circle" alt="testimony">
 										<div>
 											<h6>John Crush</h6>
 											<span>Egypt</span>
 											<!-- Rating Stars -->
-                      <div class="mt-3">
+                      <div class="rating mt-1">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -235,19 +238,19 @@
                       </div>
 										</div>
 									</div>
-									<div>
+									<div class="module">
 										<span class="mb-2">Awesome!</span>
 										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolores quod atque porro laboriosam enim incidunt soluta, molestiae suscipit nesciunt quidem tempore vel pariatur necessitatibus.</p>
 									</div>
 								</div>
-								<div class="col-md bg-white">
+								<div class="normal bg-white">
 									<div class="d-flex align-items-center mb-3">
 										<img src="../asset/blog-profile-pic-3.png" class="img-fluid rounded-circle" alt="testimony">
 										<div>
 											<h6>Mary Cooly</h6>
 											<span>France</span>
 											<!-- Rating Stars -->
-                      <div class="mt-3">
+                      <div class="rating mt-1">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -256,7 +259,7 @@
                       </div>
 										</div>
 									</div>
-									<div>
+									<div class="module">
 										<span class="mb-2">Very Good!</span>
 										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ratione similique nihil sint, voluptatum nam maxime labore quod adipisci assumenda autem veniam quia.</p>
 									</div>
@@ -265,15 +268,15 @@
 						</div>
 						
 						<div class="mySlides">
-							<div class="row">
-								<div class="col-md vice bg-white">
+							<div class="d-flex normal-container">
+								<div class="normal bg-white">
 									<div class="d-flex align-items-center mb-3">
 										<img src="../asset/blog-profile-pic-3.png" class="img-fluid rounded-circle" alt="testimony">
 										<div>
 											<h6>Christina Mark</h6>
 											<span>England</span>
 											<!-- Rating Stars -->
-                      <div class="mt-3">
+                      <div class="rating mt-1">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -282,19 +285,19 @@
                       </div>
 										</div>
 									</div>
-									<div>
+									<div class="module">
 										<span class="mb-2">Great</span>
 										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ex, voluptatem adipisci ipsam expedita voluptate optio qui quia corporis autem, maxime aspernatur laborum. Ducimus, eos.</p>
 									</div>
 								</div>
-								<div class="col-md bg-white">
+								<div class="normal bg-white">
 									<div class="d-flex align-items-center mb-3">
 										<img src="../asset/blog-profile-pic-1.png" class="img-fluid rounded-circle" alt="testimony">
 										<div>
 											<h6>John Crush</h6>
 											<span>Argentina</span>
 											<!-- Rating Stars -->
-                      <div class="mt-3">
+                      <div class="rating mt-1">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -303,19 +306,19 @@
                       </div>
 										</div>
 									</div>
-									<div>
+									<div class="module">
 										<span class="mb-2">Awesome!</span>
 										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorem corporis cum alias reiciendis error eum recusandae, itaque vitae ipsam debitis eligendi.</p>
 									</div>
 								</div>
-								<div class="col-md vice bg-white">
+								<div class="normal bg-white">
 									<div class="d-flex align-items-center mb-3">
 										<img src="../asset/blog-profile-pic-2.png" class="img-fluid rounded-circle" alt="testimony">
 										<div>
 											<h6>Mary Cooly</h6>
 											<span>Denmark</span>
 											<!-- Rating Stars -->
-                      <div class="mt-3">
+                      <div class="rating mt-1">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -324,7 +327,7 @@
                       </div>
 										</div>
 									</div>
-									<div>
+									<div class="module">
 										<span class="mb-2">Great!</span>
 										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod, fuga obcaecati, iusto veritatis reiciendis necessitatibus temporibus sequi ipsum in nulla.</p>
 									</div>
@@ -347,17 +350,20 @@
 			<section class="who product-show container-fluid bg-secondary">
 			<div class="container">
 					<div class="row d-flex align-items-center">
-						<div class="col-md text-center px-5">
+						<div class="col-md-6 col-12 text-center px-5">
 							<h3>Watch Our Product <br />Fashion Show</h3>
+							<figure class="d-md-none d-block">
+								<img src="../asset/video-preview.jpg" alt="Product show video" width="100%" height="100%">
+							</figure>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod vero nam ab? Dolores voluptate odit id deserunt, sapiente quidem saepe accusantium voluptatibus.</p>
 						</div>
-						<div class="col-md">
+						<div class="col-md-6 d-md-block d-none">
 							<!-- 
 								Product Show video
 								Replace with an iframe link to company/store video
 							-->
 							<figure>
-								<img src="../asset/video-preview.jpg" alt="Product show video">
+								<img src="../asset/video-preview.jpg" alt="Product show video" width="100%" height="100%">
 							</figure>
 						</div>
 					</div>
@@ -368,19 +374,19 @@
 			<section class="awards container-fluid">
 				<div class="container text-center">
 					<h3>Awards</h3>
-					<div class="row d-flex align-items-center">
-						<div class="col-4">
+					<div class="d-flex flex-wrap justify-content-around">
+						<figure>
 							<img src="../asset/icons/svg/award-1.svg" alt="award">
 							<p>Best Selling Product of the Year 2018</p>
-						</div>
-						<div class="col-4">
-							<img src="../asset/web-award 1.png" class="lg" width="100%" alt="award">
+						</figure>
+						<figure>
+							<img src="../asset/web-award 1.png" alt="award">
 							<p>e-Commerce Website of the Year</p>
-						</div>
-						<div class="col-4">
+						</figure>
+						<figure>
 							<img src="../asset/icons/svg/award-2.svg" alt="award">
 							<p>World Retail Awards 2013</p>
-						</div>
+						</figure>
 					</div>
 				</div>
 			</section>

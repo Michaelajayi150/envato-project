@@ -89,13 +89,6 @@ a:hover {
   position: relative;
 }
 
-/* .cart-img {
-  position: absolute;
-  top: -90px;
-  right: 0;
-  width: 80px;
-} */
-
 .sign-in-none, .sign-up-block {
   width: 60%;
   margin: auto;
@@ -204,7 +197,7 @@ footer {
   .mobile {
     text-align: center;
   }
-
+  
   .cart-img {
     position: absolute;
     top: -90px;
@@ -215,11 +208,11 @@ footer {
   .sign-in-none, .sign-up-block {
     width: 85%;
   }
-
+  
   .log-lines {
     width: 40%;
   }
-
+  
   .circle {
     width: 14px;
     height: 14px;
@@ -229,15 +222,31 @@ footer {
   .all-circle {
     top: 35%;
   }
-
+  
   .circle.pending::before {
     width: inherit;
     height: inherit;
     transform: scale(1.7);
     border: 1px solid var(--primary-color);
   }
-
+  
   .container .bg-primary .p-1 span {
     font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 506px) {
+  .container .bg-primary .p-1 span {
+    font-size: 50%;
+  }
+
+  .all-circle {
+    top: 38%;
+    width: 80%;
+  }
+
+  .circle {
+    width: 11px;
+    height: 11px;
   }
 }

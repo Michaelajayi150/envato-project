@@ -107,7 +107,20 @@ footer {
   clear: both;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 849px) {
+  header {
+    padding: 0%;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+  
+  footer>.row:first-child {
+    padding: 2.5rem 0 0 !important;
+  }
+  
+  
   .mobile {
     text-align: center;
   }
@@ -115,10 +128,10 @@ footer {
 
 
 @media only screen and (max-width: 400px) {
-  header {
-    padding: 0%;
+  footer>.row:nth-child(2) {
+    padding: 0 0 2.5rem !important;
   }
-
+  
   .navbar-toggler {
     padding: 2px 5px;
     font-size: 17px;

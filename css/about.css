@@ -35,8 +35,11 @@
 
 .hero-bg > div {
   position: absolute;
+  width: 100%;
   top: 25%;
-  left: 25%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
 }
 
 .hero h2 {
@@ -76,6 +79,10 @@
 }
 
 /* Section Who */
+.who {
+  position: relative;
+}
+
 .who h3, .testimony h3, .awards h3 {
   font-size: 36px;
   margin-bottom: 1rem;
@@ -92,15 +99,20 @@
   margin-bottom: 2rem;
 }
 
-.testimony .col-md {
-  margin-right: 3rem;
+.testimony .normal-container {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.testimony .normal {
+  width: 32%;
   padding: 2rem;
   text-align: left;
   border-radius: 7px;
 }
 
-.testimony .col-md:last-child {
-  margin-right: 0;
+.testimony .rating .fa-star, .testimony .rating .fa-star-half-alt, .testimony .rating .far.fa-star{
+  font-size: 20px;
 }
 
 .testimony img.rounded-circle {
@@ -130,9 +142,14 @@
 }
 
 /* Awards */
+.awards img {
+  max-width: 150px;
+  height: 150px;
+  margin-top: 3rem;
+}
+
 .awards h3 {
   font-size: 40px;
-  margin-bottom: 3rem;
 }
 
 .awards p {
@@ -140,70 +157,235 @@
   color: var(--primary-color);
 }
 
-@media (max-width: 768px) {
-  #hero-img {
-    position: absolute;
-    width: 100%;
-    background: url('../asset/background-3.jpg') no-repeat;
-    background-color: palevioletred;
-    background-blend-mode: lighten;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* opacity: 0.5; */
-    height: 2px;
-    max-height: 597px;
-    z-index: 1;
-  }
 
-  .hero-bg {
-    position: relative;
-    background: url('../asset/background-3.jpg') no-repeat;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 597px;
-  }
-
-  .hero .hero-description-sm {
-    padding: 2rem 3rem;
-  }
-
-  .hero .hero-description-sm h2 {
-    font-size: 36px;
-  }
-
-  .why-us .col-md, .who .col-md:first-child {
+@media only screen and (max-width: 905px) {
+  .why-us figure, .who .col-md-6:first-child {
     margin-bottom: 2rem;
   }
 
-  .why-us .col-md:last-child, .product .col-md:last-child, .testimony .col-md:last-child {
+  .why-us figure:last-child, .product .col-md:last-child, .testimony .col-md-6:last-child {
     margin-bottom: 0;
+  }
+
+  .testimony .normal {
+    padding: 1.5rem;
+  }
+  
+  .testimony img.rounded-circle {
+    max-width: 30%;
+  }
+
+  .testimony .rating .fa-star, .testimony .rating .fa-star-half-alt, .testimony .rating .far.fa-star{
+    font-size: 18px;
+  }
+
+  .testimony span {
+    font-size: 14px;
+  }
+
+  .testimony h6 {
+    font-size: 15px;
+  }
+
+  .who p {
+    font-size: 16px;
+  }
+  
+  .who h3, .testimony h3, .awards h3 {
+    font-size: 27px;
+  }
+}
+
+@media only screen and (max-width: 772px) {
+  .hero .hero-description-sm h2 {
+    font-size: 42px;
   }
 
   .product .col-md {
     margin-bottom: 3.5rem;
   }
 
-  .testimony .col-md {
-    margin-right: 0;
-    margin-bottom: 2rem;
+  .testimony .normal {
+    padding: 1.5rem .5rem;
   }
 
-  .awards img {
-    width: 65px;
+  .normal .d-flex {
+    display: block !important;
+    text-align: center;
   }
 
-  .awards img.lg {
-    width: 100px;
+  .normal .module {
+    margin: 0 0 1em 0;
+    overflow: hidden;
+    position: relative;
+    height: 6em;
+  }
+  
+  .module p {
+    margin: 0;
+  }
+  
+  .module:after {
+    content: "...";
+    text-align: center;
+    position: absolute;
+    line-height: .5em;
+    padding-top: .5em;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    z-index: 100;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255) 45%);
+  }
+
+  .testimony img.rounded-circle {
+    max-width: 50%;
+  }
+
+  .testimony .rating .fa-star, .testimony .rating .fa-star-half-alt, .testimony .rating .far.fa-star{
+    font-size: 14px;
   }
 
   .awards p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 578px) {
+  #hero-img {
+    max-height: 497px;
+  }
+  
+  .hero {
+    height: 497px;
+  }
+  
+  .hero-bg {
+    height: 497px;
+  }
+
+  .hero .hero-description-sm {
+    padding: 2rem;
+  }
+
+  .hero-bg > div {
+    width: 100%;
+  }
+
+  .hero .hero-description-sm h2 {
+    font-size: 36px;
+  }
+  
+  .hero .hero-description-sm p {
+    font-size: 16px;
+  }
+
+  .testimony .normal {
+    width: 49%;
+    padding: 1.5rem .75rem;
+  }
+
+  .normal-container .normal:last-child {
+    display: none;
+  }
+
+  .normal .d-flex {
+    display: flex !important;
+    text-align: center;
+    justify-content: space-around;
+  }
+  
+  .normal .module {
+    overflow: visible;
+    height: auto;
+  }
+
+  .module:after {
+    content: "";
+    background: none;
+  }
+
+  .testimony img.rounded-circle {
+    max-width: 30%;
+  }
+
+  .testimony .rating .fa-star, .testimony .rating .fa-star-half-alt, .testimony .rating .far.fa-star{
+    font-size: 13px;
+  }
+
+  .testimony span {
     font-size: 10px;
   }
 
-  .vice {
-    display: none;
-    height: 0;
+  .testimony h6 {
+    font-size: 11px;
   }
+}
+
+@media only screen and (max-width: 400px) {
+  #hero-img {
+    max-height: 397px;
+  }
+  
+  .hero {
+    height: 397px;
+  }
+  
+  .hero-bg {
+    height: 397px;
+  }
+
+  .hero .hero-description-sm h2 {
+    font-size: 30px;
+  }
+  
+  .hero .hero-description-sm p {
+    font-size: 14px;
+  }
+
+  .testimony .normal {
+    width: 100%;
+    padding: 1.5rem .75rem;
+    margin-top: 1rem;
+  }
+
+  .testimony img.rounded-circle {
+    max-width: 70.25px;
+    margin: auto 3%;
+  }
+  
+  .testimony .normal .d-flex>div {
+    text-align: left;
+    width: 80%;
+  }
+
+  .testimony .normal:last-child {
+    display: block;
+  }
+
+  .testimony .rating .fa-star, .testimony .rating .fa-star-half-alt, .testimony .rating .far.fa-star{
+    font-size: 13px;
+  }
+
+  .testimony span {
+    font-size: 10px;
+  }
+
+  .testimony h6 {
+    font-size: 11px;
+  }
+
+  .who .col-md-6.col-12 {
+    padding: 0 !important;
+    text-align: left !important;
+  }
+  
+  .who p {
+    font-size: 14px;
+  }
+  
+  .who h3, .testimony h3, .awards h3 {
+    font-size: 24px;
+  }
+
 }
